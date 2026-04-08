@@ -1,6 +1,7 @@
 package com.mx.Clinicas.entidad;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
@@ -14,6 +15,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Clinica {
 	@Id
+	@GeneratedValue(Strategy = GenerationType)
 	private long numero;
 	private String nombre;
 	private String ciudad;
